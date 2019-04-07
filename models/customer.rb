@@ -59,4 +59,10 @@ class Customer
     @funds -= film_price
   end
 
+  def bookings(tickets)
+    tickets = Ticket.all
+    result = tickets.count
+    return result
+  end
+
 end
